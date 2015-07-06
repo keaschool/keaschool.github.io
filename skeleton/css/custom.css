@@ -13,9 +13,10 @@
 body  {
   font-family: 'Montserrat', helvetica, arial, sans-serif;
   font-size: 1.8em;
-  border: 10px solid #9b59b6;
+  /*border: 10px solid #9b59b6;*/
   color: #2c3e50;
   padding-top: 30px;
+  background-color: #bcd8f1;
 }
 
 h1, h2, h3 {
@@ -85,14 +86,14 @@ li {
 /* links */
 a:link, a:visited, a:active {
   text-decoration: none;
-  border-bottom: 1px solid #f1c40f;
-  color: #e74c3c;
+  border-bottom: 1px solid #955ba5;
+  color: #3b97d3;
 }
 
 a:hover {
-  background: #F6D965;
+  background: #955ba5;
   border: none;
-  color: #222;
+  color: #fff;
 }
   a.site-avatar:hover {
     background: none;
