@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% include what-is-this.html %}
+
+
+<!-- This loops through the paginated posts
+{% for post in paginator.posts %}
+<h1 class="u-c-txt"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+<div class="content">
+  {{ post.content }}
+</div>
+
+
+  {% endfor %}-->
+
+<div class="posts">
+  {% for post in site.posts limit:1 %}
+  <article class="post">
+
+    <h1><a href="{{ post.url }}">{{ post.title | replace: '-', '-'}}</a></h1>
+    {% include post-author.html%}
+    <div class="entry">
+      {{ post.content }}
+    </div>
+
+  </article>
+  {% endfor %}
+</div>
+
+{% include about-blair.html %}
+<div class="row older-newer">
+<p><a href="all-posts">Read more posts like this</a></p>
+</div>
